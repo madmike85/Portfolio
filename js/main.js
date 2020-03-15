@@ -102,8 +102,8 @@ const dictionary = {
 
 let language = 'rus';
 
-const cvLinkEN = '../../assets/Mikhail_Shcheglakov_CV_EN.pdf';
-const cvLinkRU = '../../assets/Mikhail_Shcheglakov_CV_RU.pdf';
+const cvLinkEN = 'assets/Mikhail_Shcheglakov_CV_EN.pdf';
+const cvLinkRU = 'assets/Mikhail_Shcheglakov_CV_RU.pdf';
 
 const header = document.querySelector('.header');
 const languageBtn = document.querySelector('.language');
