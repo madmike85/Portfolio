@@ -1,0 +1,51 @@
+@import 'mixins';
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10%;
+  color: #3c8ffe;
+
+  a {
+    color: #3c8ffe;
+  }
+
+  &__title {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin-bottom: 10px;
+      opacity: 0.8;
+      display: flex;
+      align-items: center;
+      @include smoothTransition(0.3);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    i {
+      margin-right: 15px;
+      font-size: 23px;
+    }
+
+    span {
+      font-size: 21px;
+    }
+  }
+}

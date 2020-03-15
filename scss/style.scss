@@ -1,0 +1,58 @@
+@import 'navigation';
+@import 'about';
+@import 'contacts';
+@import 'skills';
+@import 'projects';
+@import 'footer';
+@import 'mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url(/assets/Header.png);
+  padding: 20px 10% 50px;
+
+  @media only screen and (max-width: 800px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.btn {
+  border: solid 2px;
+  border-radius: 23px;
+  display: block;
+  padding: 11px 20px;
+  height: 43px;
+}
+
+.blue {
+  border-color: #fff;
+  color: #fff;
+  @include smoothTransition(0.3);
+
+  &:hover {
+    border-color: #3c8ffe;
+    color: #3c8ffe;
+    background: #fff;
+  }
+}
+
+.white {
+  border-color: #3c8ffe;
+  color: #3c8ffe;
+
+  &:hover {
+    border-color: #fff;
+    color: #fff;
+    background: #3c8ffe;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin smoothTransition($duration) {
+  transition: ease all #{$duration}s;
+}
+
+@mixin smoothTransition5ms {
+  transition: ease all 0.5s;
+}
