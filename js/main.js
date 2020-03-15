@@ -27,6 +27,10 @@ const dictionary = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iusto tenetur, asperiores autem laboriosam sunt incidunt? Eos, fugit? Libero, nostrum aut! Porro itaque et deserunt sapiente error magnam, modi dolorem.',
       rus: `Задача организации, в особенности же новая модель организационной деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке модели развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.`,
     },
+    link: {
+      eng: 'Download CV',
+      rus: 'Скачать CV',
+    },
   },
   contacts: {
     title: {
@@ -97,6 +101,10 @@ const dictionary = {
 };
 
 let language = 'rus';
+
+const cvLinkEN = '../../assets/Mikhail_Shcheglakov_CV_EN.pdf';
+const cvLinkRU = '../../assets/Mikhail_Shcheglakov_CV_RU.pdf';
+
 const header = document.querySelector('.header');
 const languageBtn = document.querySelector('.language');
 const mobileLanguageBtn = document.querySelector('.mobile-nav__item.language');
@@ -113,6 +121,7 @@ const mobileNavigationItems = document.querySelectorAll('.mobile-nav__item > a')
 
 const informationName = document.querySelector('.information__name');
 const informationText = document.querySelector('.information__text');
+const cvLink = document.querySelector('.download');
 
 const contactsTitle = document.querySelector('.contacts__title');
 const contactsText = document.querySelector('.contacts__text');
@@ -150,6 +159,9 @@ function changeLanguage() {
 
   informationName.textContent = dictionary.about.name[language];
   informationText.textContent = dictionary.about.text[language];
+  cvLink.textContent = dictionary.about.link[language];
+
+  setCVLink(language);
 
   contactsTitle.textContent = dictionary.contacts.title[language];
   contactsText.textContent = dictionary.contacts.text[language];
@@ -188,6 +200,14 @@ function changeProjectsLanguage(lang) {
     const projectText = project.querySelector('.card__text');
     projectText.textContent = dictionary.projects.personal.list[index][lang];
   });
+}
+
+function setCVLink(lang) {
+  if (lang === 'eng') {
+    cvLink.setAttribute('href', cvLinkEN);
+  } else {
+    cvLink.setAttribute('href', cvLinkRU);
+  }
 }
 
 function loadSkillPercentage() {
