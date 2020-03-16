@@ -24,8 +24,9 @@ const dictionary = {
     },
     text: {
       eng:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iusto tenetur, asperiores autem laboriosam sunt incidunt? Eos, fugit? Libero, nostrum aut! Porro itaque et deserunt sapiente error magnam, modi dolorem.',
-      rus: `Задача организации, в особенности же новая модель организационной деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке модели развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.`,
+        'Junior Front-End Developer aiming to stay in touch with the trends in the field and involve them into real projects. Fond of learning and exploring new technologies, being convinced that deeper understanding of ones allows to create more valuable, impressive and complex applications. Able to learn incredibly fast due to genuine passion and dedication to the subject of learning.',
+      rus:
+        'Junior Front-End Developer держу руку на пульсе новых трендов в отрасли и использую их в реальных проектах. Постоянно изучаю новые технологии, так как считаю, что глубокое их понимание позволяет создавать нужные и сложные приложения. Способен к быстрому обучению благодаря увлечению и полному посвящению себя предмету.',
     },
     link: {
       eng: 'Download CV',
