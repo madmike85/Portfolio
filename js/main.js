@@ -88,6 +88,10 @@ const dictionary = {
           eng: 'A simple clone of Piskel pixel editor',
           rus: 'Простой клон пиксельного редактора Piskel',
         },
+        {
+          eng: 'A client for YouTube API',
+          rus: 'Клиент для YouTube API',
+        },
       ],
     },
     link: {
