@@ -226,12 +226,14 @@ function toggleMobileMenu() {
 }
 
 function fixedNav() {
-  if (window.scrollY > mainNavTop) {
-    header.style.paddingTop = '140px';
-    mainNav.classList.add('fixed');
-  } else {
-    header.style.paddingTop = '20px';
-    mainNav.classList.remove('fixed');
+  if (window.matchMedia('(min-width: 560px)').matches) {
+    if (window.scrollY > mainNavTop) {
+      header.style.paddingTop = '140px';
+      mainNav.classList.add('fixed');
+    } else {
+      header.style.paddingTop = '20px';
+      mainNav.classList.remove('fixed');
+    }
   }
 }
 
