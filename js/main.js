@@ -57,7 +57,7 @@ const dictionary = {
     commercial: {
       title: {
         eng: 'Commercial Projects',
-        rus: 'Коммерчиские Проекты',
+        rus: 'Коммерческие Проекты',
       },
       list: [
         {
@@ -74,7 +74,7 @@ const dictionary = {
       list: [
         {
           eng: 'Virtual keyboard which duplicate the real one',
-          rus: 'Виртуальная клавиатураб которая дублирует реальную',
+          rus: 'Виртуальная клавиатура, которая дублирует реальную',
         },
         {
           eng: 'A simple tetris',
