@@ -92,6 +92,10 @@ const dictionary = {
           eng: 'A client for YouTube API',
           rus: 'Клиент для YouTube API',
         },
+        {
+          eng: 'A simple app for task creation',
+          rus: 'Простое приложение для создания задач',
+        },
       ],
     },
     link: {
